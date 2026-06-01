@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#f5ba92",
+              "surface-tint": "#815433",
+              "background": "#fafaf5",
+              "secondary-fixed": "#e0e5cc",
+              "surface-container-high": "#e8e8e3",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f4f4ef",
+              "tertiary": "#704723",
+              "secondary-fixed-dim": "#c4c9b1",
+              "error": "#ba1a1a",
+              "tertiary-fixed-dim": "#f4bb8e",
+              "on-primary-fixed-variant": "#653d1e",
+              "on-primary-fixed": "#301400",
+              "surface-dim": "#dadad5",
+              "outline-variant": "#d5c3b8",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#ffe3d2",
+              "primary-container": "#8c5e3c",
+              "on-secondary-container": "#626753",
+              "surface": "#fafaf5",
+              "outline": "#83746b",
+              "tertiary-container": "#8b5f39",
+              "surface-variant": "#e3e3de",
+              "on-background": "#1a1c19",
+              "inverse-primary": "#f5ba92",
+              "on-secondary-fixed-variant": "#444937",
+              "surface-container-highest": "#e3e3de",
+              "inverse-surface": "#2f312e",
+              "on-surface": "#1a1c19",
+              "on-primary": "#ffffff",
+              "surface-bright": "#fafaf5",
+              "secondary": "#5c614d",
+              "on-surface-variant": "#51443c",
+              "on-tertiary-fixed-variant": "#653e1b",
+              "inverse-on-surface": "#f1f1ec",
+              "primary-fixed": "#ffdcc5",
+              "on-tertiary-fixed": "#2e1500",
+              "on-error-container": "#93000a",
+              "secondary-container": "#e0e5cc",
+              "on-secondary-fixed": "#191d0e",
+              "surface-container": "#eeeee9",
+              "on-error": "#ffffff",
+              "tertiary-fixed": "#ffdcc2",
+              "primary": "#704627",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#ffe4d1"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #fafaf5;
+        color: #1a1c19;
+      }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fafaf5]/80 backdrop-blur-xl transition-opacity duration-300">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#704627] font-headline uppercase">DANE DESIGN</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#51443c] hover:text-[#704627] transition-colors font-headline tracking-tight" href="#">Living Room</a>
+<a class="text-[#51443c] hover:text-[#704627] transition-colors font-headline tracking-tight" href="#">Dining</a>
+<a class="text-[#51443c] hover:text-[#704627] transition-colors font-headline tracking-tight" href="#">Bedroom</a>
+<a class="text-[#51443c] hover:text-[#704627] transition-colors font-headline tracking-tight" href="#">Accessories</a>
+<a class="text-[#704627] border-b-2 border-[#704627] pb-1 font-semibold font-headline tracking-tight" href="#">Collections</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined text-[#704627]" data-icon="search">search</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined text-[#704627]" data-icon="person">person</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 relative">
+<span class="material-symbols-outlined text-[#704627]" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-2 h-2 bg-tertiary rounded-full"></span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: The Nordic Living Room -->
+<section class="relative px-12 py-20 flex flex-col md:flex-row items-center gap-16 max-w-[1920px] mx-auto min-h-[870px]">
+<div class="w-full md:w-1/2 order-2 md:order-1">
+<div class="max-w-xl">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-6 block">Featured Series</span>
+<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter text-on-surface leading-[0.9] mb-8">The Nordic <br/>Living Room.</h1>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-12 max-w-md">
+                        A curated exploration of natural textures, organic silhouettes, and the quiet warmth of teak craftsmanship. Designed for the art of dwelling.
+                    </p>
+<div class="flex items-center gap-8">
+<button class="bg-primary text-on-primary px-10 py-4 font-label uppercase text-xs tracking-widest hover:bg-primary-container transition-all duration-300 active:scale-95">
+                            Shop Collection
+                        </button>
+<button class="font-label uppercase text-xs tracking-widest text-on-surface hover:text-primary transition-colors border-b border-outline/20 pb-1">
+                            Explore Story
+                        </button>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-lg shadow-sm">
+<img alt="Mid-century modern living room with teak furniture" class="w-full h-full object-cover" data-alt="Minimalist living room with natural wood furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiCz0Vjw9Iq_rqb5yUvqtGXR1VMKzdRNlW_hMwWt2z8JOJn3LSvUhlqQayNc-a1YhvIDH_R-JRQ-GGc6Cl46xiVOxQ46OEk1WRO6y0jzqPOpPXm7UNayPM74nPKdXm8ofcjOU3HYHubjvUCwLW6d00R7HsVeF9-RVgZ-IJ09GUQG9JTX4V3UmEm6VlIDXikxyqqhe2vR_k_340GqJg3yigeHOHGWl8BA11ee9UCLfTC2V_wbePizlu_aQ05b2_ETo7tYDJI_7PRg"/>
+</div>
+</div>
+<!-- Decorative floating text -->
+<div class="absolute right-0 bottom-24 hidden lg:block opacity-5 select-none pointer-events-none">
+<span class="font-headline text-[15rem] font-bold tracking-tighter leading-none">STIL</span>
+</div>
+</section>
+<!-- Category Bento-inspired Grid -->
+<section class="px-12 py-24 bg-surface-container-low">
+<div class="max-w-[1920px] mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline text-4xl font-bold tracking-tighter text-on-surface">Browse by category</h2>
+<a class="font-label text-xs uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#">View All Archive</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-[1000px] md:h-[700px]">
+<!-- Large Sofa Item -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-lg bg-surface">
+<img alt="Modern minimalist sofa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Luxury olive green velvet sofa minimalist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjfiEggspjEFyPg5nV1sPhMhEen60IfQqcnOr5sPXCTGMvDhkW8I_jcxvGwf2UdRbsp-fkI6Er7V1nG5noM9RJePle8-_I3WNvaMMydeInSoqJ7qlSNdIZDau7u9CspNMaZLAFwxhs_GlTlkz37GQaLBcMlGd9UlpufD2N0XnGi58KyAE_iyg9vx1GGtlB6dkkne26V7kbyRrQwke6XTDzKFeWq7hcQDXVTPxwrbWllD6LUcRYDQ3rIDGyDR2saO99kiAhqADVoQ"/>
+<div class="absolute bottom-10 left-10">
+<h3 class="font-headline text-3xl font-bold text-on-surface mb-2">Sofas</h3>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">42 Models Available</span>
+</div>
+</div>
+<!-- Lounge Chairs -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-lg bg-surface">
+<img alt="Classic lounge chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sleek mid-century wood lounge chair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtI_LMvhCAO--krF9Jxu2vvJANlYkC2ViFmK4SDwh6-IeoaRDWzWnFrjmpyIZnLhOy3eTRLgtsrYA46gozCCRSiUmqY9IqKrSrkFQV7so2hqVL2WBbNfT3nsZGCan62cBIVKcbQoV2A8fi_AKzOVwRMnXC8C_q21JNnUGBOuHR_Zsdk3pGtcXw_WaCg6Efg2DCGzhwBeHFVJBZkuY1wtHeN0Ueegh8puXuonuBmTMUJdCSwAinxqIgmK8lIp7PP1rRPp6z2ShwZQ"/>
+<div class="absolute bottom-10 left-10">
+<h3 class="font-headline text-3xl font-bold text-on-surface mb-2">Lounge Chairs</h3>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">28 Icons</span>
+</div>
+</div>
+<!-- Dining Tables -->
+<div class="relative group overflow-hidden rounded-lg bg-surface">
+<img alt="Oak dining table" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist oak circular dining table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCVeJhZ11vpAIbnbI9TIWAw_hQYM2N76T5-NzgSryVf09rttunR7GEYCm813BtiPdRF8M0GBqvOeUv7APMiGY7qoTcRYdb1BDNxlBuN5rTj2LfUvkf7HGFTLNC2tKCnr4h9d0ioBUKvBwtqFjwotkfHAlBonJkxtJVjFP6AJ349iAHtklvcaIPRREuy9pWMeaHgbOu9moH7hK6qWl0gDm3ALBVbGdPY7-44FdmXWICjONItGIhzCwsonUfmXppXewGac7ltzFeEw"/>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline text-xl font-bold text-on-surface mb-1">Dining</h3>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Gather</span>
+</div>
+</div>
+<!-- Lighting -->
+<div class="relative group overflow-hidden rounded-lg bg-surface">
+<img alt="Designer pendant lamp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Brass and glass designer pendant lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5msjbtrtujMtWni9ZCo7pgOtKRpPuQs8sUVkPVb_-34mJmgZ5ksHg-l-l7ib1ef3iDonZVDgIuKAm1Tfw5fcvVUdacX2dihYt-Aqm4zJUxkgrQfheQMdFz-zDU3dwmYmOxSdjL92P4RkFGW46rg9xmvpyNUUim25peFEwJoqk13scec7Knd-qdmBvMuQnDFXX_JxIOp15kCbrXK3QozpFJT33Fd-DbwZl_C5mRd7cIX6X8kuqmK55PiKiM__MZI3pq1WHMq1c-w"/>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline text-xl font-bold text-on-surface mb-1">Lighting</h3>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Atmosphere</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- New Arrivals: Product Cards -->
+<section class="px-12 py-32 max-w-[1920px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
+<div class="max-w-xl">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-4 block">Seasonal Update</span>
+<h2 class="font-headline text-5xl font-bold tracking-tighter text-on-surface mb-6">New Arrivals.</h2>
+<p class="font-body text-on-surface-variant">The latest additions to our permanent collection, emphasizing the raw beauty of walnut and the soft touch of organic linen.</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 flex items-center justify-center border border-outline/20 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-on-surface" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline/20 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-on-surface" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Product Card 1 -->
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container-low rounded-lg mb-8 overflow-hidden relative">
+<img alt="Teak sideboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern walnut wood sideboard clean lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANZ6tzM7Gx27AR8DHRVlojAVp9QbLlE2802GkIy06kVnvwsIFxFWA3a_bAayXtV8TSnbUrcu9kB1oZ7Pb-Ngwez5BadXuT-7Fi6Qz89L18JWcxLSITL-7B2DiLp6UHfaD81wz_qy-lJDju8JfiAnRfSOXHquapPTTHrwnYcHoAsrhAHJSqZ6R-DgyAjlo71k8O3I2uRpTnlGg8nbTfL1o6yuUbTWMLAiG9bQ3gjA52shQfj4RJHb-awoyNBdRMT5MNiO_THbIy2Q"/>
+<div class="absolute top-6 left-6">
+<span class="bg-surface-container-lowest text-on-surface-variant font-label text-[10px] px-3 py-1 uppercase tracking-widest">In Stock</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors">The Åhus Sideboard</h4>
+<p class="font-body text-sm text-on-surface-variant mt-2">Solid Walnut • Hand-waxed Finish</p>
+</div>
+<span class="font-headline font-bold text-lg text-primary">$3,240</span>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container-low rounded-lg mb-8 overflow-hidden relative">
+<img alt="Modern wood chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Iconic mid-century wishbone chair natural" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByG79RO5lxhgpY5CqgU7j8pwp7Ny5m9SFxzVb63Ua0H80IT4hFXlGbbVkgWhNERG6lHb5fbere7rTpe9rdDgGC7AnNgBAlV26-24Qo-Qkm1maMJyxi2tmoP3ANICEBiRRUE71rGZ5h133AvKruqPXfDK036LTSzQQ1ZNl6vgM6vk04fym9ZfH0azV19ubMBpiI7HGgIvK-9g0zQT2DPPGrKRbuERs_qN-QabtA55d90ByQgSKsUp8hujsvYIxvkKFWvvlZV1Vi6w"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors">CH24 Wishbone Chair</h4>
+<p class="font-body text-sm text-on-surface-variant mt-2">Natural Oak • Paper Cord Seat</p>
+</div>
+<span class="font-headline font-bold text-lg text-primary">$895</span>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container-low rounded-lg mb-8 overflow-hidden relative">
+<img alt="Velvet armchair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Plush olive green velvet armchair walnut base" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuiqtgvOYUyjA4mW7AuIyvorVCwQCoI1VVcgGgBxBPzPPX9vrKTr6DP3Q6a71IpDj1tkh7-dVLF_Dejb5XJcymvBjp8Oz0QxSQUuPXFw07cV6-n-6j2W31roh7INaI1Vy23qkxsBnKAdOvaht2dKuRL3YlFNshZSM7s4W60Otz1YKSibFaXQsPw2KoCK5dK8j-GcI7oADgONdRlbdejCtwT-pV8n50W_rcKSA8edCqt_FgpQXcGUjfXtYUPzglfTDrKCCdE6hpTA"/>
+<div class="absolute top-6 left-6">
+<span class="bg-primary text-on-primary font-label text-[10px] px-3 py-1 uppercase tracking-widest">Limited Edition</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Lumi Lounge Chair</h4>
+<p class="font-body text-sm text-on-surface-variant mt-2">Forest Velvet • Black Steel Frame</p>
+</div>
+<span class="font-headline font-bold text-lg text-primary">$1,850</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature "The Material Chip" Selection Section -->
+<section class="px-12 py-24 bg-white border-y border-outline/5">
+<div class="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="aspect-square bg-surface-container overflow-hidden rounded-lg">
+<img alt="Furniture craftsman" class="w-full h-full object-cover opacity-90" data-alt="Close up of wood grain finish detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlG-OxHhzjWTT2O_0K2HLBaFg35CNOChFUW0wRFBScp1jXlQHS-TQP_U17bk7M8e0VmN4pPfV_z436bd0bbJ89lM9ygFPLJhJOF8a-ZF_yWgwLREwhpZ_JjcIDb3Upt9JBIWX57flWZKC5OsxAX_drp_wm4A4-UAeh_9LSmvqRwrjjncP19mOO3DqiB_0U-7V4-o2tPDxJ22EJg1S-PimPHgBnav9GdFoPCHJoDMsSYSSHuJP_Scm6aGzOuLWgvaOjM7--FKnf5w"/>
+</div>
+<div class="absolute -bottom-10 -right-10 bg-primary p-12 hidden lg:block">
+<span class="font-headline text-white text-4xl font-bold italic tracking-tighter">Est. 1964</span>
+</div>
+</div>
+<div>
+<h2 class="font-headline text-4xl font-bold tracking-tighter text-on-surface mb-8">Personalize Your Craft.</h2>
+<p class="font-body text-on-surface-variant mb-12">Choose from our signature range of sustainably sourced timber. Each selection offers a distinct narrative for your home.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<button class="flex items-center gap-4 p-5 bg-surface-container-low hover:bg-surface-container transition-colors group">
+<div class="w-8 h-8 rounded-sm bg-[#513b2c] border border-outline/10"></div>
+<div class="text-left">
+<span class="block font-headline font-bold text-on-surface text-sm">Aged Teak</span>
+<span class="block font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Rare &amp; Heavy</span>
+</div>
+</button>
+<button class="flex items-center gap-4 p-5 bg-white border border-outline/20 group">
+<div class="w-8 h-8 rounded-sm bg-[#d6b794] border border-outline/10"></div>
+<div class="text-left">
+<span class="block font-headline font-bold text-on-surface text-sm">White Oak</span>
+<span class="block font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Light &amp; Airy</span>
+</div>
+</button>
+<button class="flex items-center gap-4 p-5 bg-white border border-outline/20 group">
+<div class="w-8 h-8 rounded-sm bg-[#3a2a1f] border border-outline/10"></div>
+<div class="text-left">
+<span class="block font-headline font-bold text-on-surface text-sm">Smoked Walnut</span>
+<span class="block font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Deep Presence</span>
+</div>
+</button>
+<button class="flex items-center gap-4 p-5 bg-white border border-outline/20 group">
+<div class="w-8 h-8 rounded-sm bg-[#e8dccb] border border-outline/10"></div>
+<div class="text-left">
+<span class="block font-headline font-bold text-on-surface text-sm">Ash Wood</span>
+<span class="block font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Modern Grain</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-[#dadad5]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full px-12 py-16 border-t border-[#83746b]/10 max-w-[1920px] mx-auto">
+<div class="space-y-8">
+<div class="text-lg font-bold text-[#51443c] font-headline uppercase tracking-tighter">DANE DESIGN</div>
+<p class="font-body text-[#51443c] max-w-xs text-sm leading-relaxed">
+                    Celebrating the intersection of Scandinavian heritage and mid-century modern utility.
+                </p>
+<div class="flex gap-6">
+<a class="text-[#51443c] hover:text-[#704627] transition-colors" href="#"><span class="material-symbols-outlined" data-icon="language">language</span></a>
+<a class="text-[#51443c] hover:text-[#704627] transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="space-y-4">
+<h5 class="font-headline font-bold text-[#51443c] uppercase text-xs tracking-widest">Atelier</h5>
+<ul class="space-y-2">
+<li><a class="font-body text-xs uppercase tracking-widest text-[#51443c] hover:text-[#704627] transition-colors" href="#">Craftsmanship</a></li>
+<li><a class="font-body text-xs uppercase tracking-widest text-[#51443c] hover:text-[#704627] transition-colors" href="#">Sustainability</a></li>
+<li><a class="font-body text-xs uppercase tracking-widest text-[#51443c] hover:text-[#704627] transition-colors" href="#">Designers</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-headline font-bold text-[#51443c] uppercase text-xs tracking-widest">Support</h5>
+<ul class="space-y-2">
+<li><a class="font-body text-xs uppercase tracking-widest text-[#51443c] hover:text-[#704627] transition-colors" href="#">Shipping</a></li>
+<li><a class="font-body text-xs uppercase tracking-widest text-[#51443c] hover:text-[#704627] transition-colors" href="#">Returns</a></li>
+<li><a class="font-body text-xs uppercase tracking-widest text-[#51443c] hover:text-[#704627] transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-[#83746b]/10 max-w-[1920px] mx-auto flex justify-between items-center">
+<span class="font-body text-[10px] uppercase tracking-widest text-[#51443c]">© 2024 DANE DESIGN. THE CURATED ATELIER.</span>
+<span class="font-body text-[10px] uppercase tracking-widest text-[#51443c]">Copenhagen / Stockholm / London</span>
+</div>
+</footer>
+</body></html>
