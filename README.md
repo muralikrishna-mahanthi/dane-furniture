@@ -1,7 +1,7 @@
 # 🪵 DANE DESIGN — Luxury Scandinavian Furniture Store
 
 **Live Site:** [View Project](https://muralikrishna-mahanthi.github.io/dane-furniture/)  
-**Built With:** HTML5 · CSS3 
+**Built With:** HTML5 · CSS3 · Vanilla JavaScript
 **Type:** UI/UX Design & Frontend Prototype
 
 > *"Celebrating the intersection of Scandinavian heritage and mid-century modern utility."*
